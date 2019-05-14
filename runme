@@ -1,0 +1,13 @@
+#!/bin/bash
+
+export LD_LIBRARY_PATH=lib
+
+if [[ $1 == "-d" ]]; then
+  gdb --args bin-debug/exe-debug ${2:-"https://pyq.ravindrababuravula.com/"}
+
+else
+  bin/exe ${1:-"https://pyq.ravindrababuravula.com/"}
+
+fi
+
+
