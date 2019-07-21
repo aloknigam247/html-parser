@@ -8,7 +8,7 @@ INC_LIBS = -lcurl -lssl -lcrypto
 
 DIRS := src
 
-.PHONY: $(DIRS) run $(EXT_LIBS)
+.PHONY: $(DIRS) $(EXT_LIBS)
 
 all: $(DIRS) $(EXECUTABLE)
 
