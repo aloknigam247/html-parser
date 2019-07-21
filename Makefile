@@ -2,7 +2,7 @@
 
 include recipe/config.mk
 include recipe/procs.mk
-include external/common.mk
+include ext/common.mk
 
 INC_LIBS = -lcurl -lssl -lcrypto
 
@@ -26,6 +26,3 @@ else									# Second case: When obj files are generated then compile them
 	$(CXX) -L $(LIB_DIR) -o $@ $^ $(INC_LIBS)
 
 endif
-
-run:
-	$(EXECUTABLE)
